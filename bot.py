@@ -3,8 +3,7 @@ from telebot import types
 import datetime
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-
-API_TOKEN = '7059295210:AAG0UksAKN5uTFkxWD5TzLX68OvVnDdkBzY'
+from config import API_TOKEN
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
